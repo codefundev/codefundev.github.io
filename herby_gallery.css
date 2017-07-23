@@ -1,0 +1,17 @@
+#inner_img_container {
+     max-width: 1000px; 
+}
+.item {
+    width: 200px;
+    float: left;
+}
+.item img {
+    display: block;
+    width: 100%;
+}
+.img_container{
+    width:700px;
+    margin: 0 auto;
+}  
+
+

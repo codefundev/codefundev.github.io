@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Herby</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <link rel="stylesheet" href="herby.css">
+    <script type="text/javascript" src="herby.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <h2>Herby</h2>
+                </a>
+                <img alt="Brand" id="brand-logo" src="photos/final_herby_logo.png">
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+                    <li class="active"><a href="about_herby.html">About Us</a></li>
+                    <li class="active"><a id="newcreate_btn" href="#newcreate">New Creation</a></li>
+                    <li class="active"><a href="#">Our Menu</a></li>
+                    <li class="active" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Meet Our Team</a></li>
+                            <li><a href="herby_gallery.html">Gallery</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a id="featured_section_btn" href="#featured_section">Happenings</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#greens">Stay Green</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#locate">Locate Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">Login</a></li>
+                </ul>
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default"><i class="fa fa-search fa-1x" aria-hidden="true"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bodyline">
+        <div class="newcreate"></div>
+        <div class="container">
+            <div class="Jumbotron">
+                <div id="carousel_herby_slides" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel_herby_slides" data-slide-to="0"></li>
+                        <li data-target="#carousel_herby_slides" data-slide-to="1"></li>
+                        <li data-target="#carousel_herby_slides" data-slide-to="2" class="active"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item animated fadeIn carousel_effect ">
+                            <img width="1200px" height="280px" src="photos/final_grilled_salad4.jpg" alt="grilled_chicken">
+                            <div class="carousel-caption">
+                                <h3><span class="carousel_words">Grilled Romaine Salad with Bacon & Bleu Cheeze sprinkle</span></h3>
+                            </div>
+                        </div>
+                        <div class="item animated fadeIn carousel_effect ">
+                            <img width="1200px" height="280px" src="photos/final_orange_chicken4.jpg" alt="orange_chicken">
+                            <div class="carousel-caption">
+                                <h3><span class="carousel_words">Orange Herb infused Roasted Chicken with Mushroom stuffings</span></h3>
+                            </div>
+                        </div>
+                        <div class="item active animated fadeIn  carousel_effect ">
+                            <img width="1200px" height="280px" src="photos/final_pineapple_tarte.jpg" alt="handy_cat">
+                            <div class="carousel-caption">
+                                <h3><span class="carousel_words">Caramalised Cinnamon Grilled Pineapple Tarte </span></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="left carousel-control" href="#carousel_herby_slides" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel_herby_slides" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sx-12 abtp">
+                    <div id="loginform" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                        <div class="modal-dialog modal-sm" role="document">
+                            <div class="modal-content">
+                                <p class="text-center">Login / Register</p>
+                                <div class="login">
+                                    <div class="panel-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="youremail">Email address</label>
+                                                <input type="email" class="form-control" id="youremail" placeholder="Email">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="yourpass">Password</label>
+                                                <input type="password" class="form-control" id="yourpass" placeholder="Password">
+                                            </div>
+                                            <div class="login_btn">
+                                                <button type="submit" class="btn btn-warning btn-group btn-group-justified">Login / Register</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="featured_section"></div><br/><br/>
+            <hr>
+            <div class="Jumbotron">
+                <div class="row">
+                    <div class="col-sx-12 text-center">
+                        <h4>Featured</h4>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <div class="row">
+                <div class="col-sx-12 col-sm-12 col-md-12 col-lg-4">
+                    <div class="thumbnail wow animated slideInLeft thumbeffect featuredeffect">
+                        <img src="photos/chef2.jpg" class="img-responsive frontpgimg wow animated rotateIn" alt="Thumb1">
+                        <div class="caption">
+                            <h3>Chef Jess Rankins</h3>
+                            <p>To bring you more creativity in taste, I love cook in the wild. Nature always nuture a surprise.</p>
+                            <p>
+                                <a href="#" class="btn btn-primary" role="button">Read more</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sx-12 col-sm-12 col-md-12 col-lg-4">
+                    <div class="thumbnail wow animated slideInUp thumbeffect featuredeffect">
+                        <img src="photos/workplace.jpg" class="img-responsive frontpgimg wow animated rotateIn" alt="Thumb1">
+                        <div class="caption">
+                            <h3>Our Workplace</h3>
+                            <p>We take pride in satisfying your dining experience. A "open" kitchen concept to feel our warmth
+                                added to your meal. </p>
+                            <p>
+                                <a href="herby_gallery.html" class="btn btn-primary" role="button">Read More</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sx-12 col-sm-12 col-md-12 col-lg-4">
+                    <div class="thumbnail wow animated slideInRight thumbeffect featuredeffect">
+                        <img src="photos/sco2.jpg" class="img-responsive frontpgimg wow animated rotateIn" alt="playoutday">
+                        <div class="caption">
+                            <h3>A "Family" Picnic Aug 2016</h3>
+                            <p>A great bonding time for families and their seniors! Work-life balance is just part of a healthy
+                                lifestyle.
+                            </p>
+                            <p>
+                                <a href="herby_gallery.html" class="btn btn-primary" role="button">Read More</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="greens"></div><br/><br/>
+            <hr>
+            <div class="Jumbotron">
+                <div class="col-sx-12 text-center">
+                    <h4>Our Supply of Fresh Greens</h4>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mC_Ra94o_us?autoplay=1&loop=1
+    &playlist=kiitensgohome"></iframe>
+                </div>
+            </div>
+            <hr>
+            <div class="Jumbotron">
+                <div class="col-sx-12 text-center">
+                    <h4>Staying Connected</h4>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sx-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="thumbnail contacteffect">
+                        <div class="panel-body contact">
+                            <form>
+                                <div class="headings" id="confirm">
+                                    <p class="text-primary text-center">I would like to...</p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Jerry">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="jerry@herbyroast.com">
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                    <input type="radio" name="HerbyReads" value="yes" checked>
+                                Have a monthly e-Herby-Reads
+                                </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                    <input type="radio" name="HerbyReads" value="no">
+                                Nothing for now
+                                </label>
+                                </div>
+                                <button type="submit" class="btn btn-xs btn-primary">Sign Up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sx-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="thumbnail contacteffect">
+                        <div class="panel-body contact">
+                            <div class="headings">
+                                <p class="text-primary text-center">We love to hear from you...</p>
+                            </div>
+                            <p>We hope you do have a great time dining at our place. Feel free to drop us a line or two on your
+                                dining experience with us. </p>
+                            <form>
+                                <div class="headings">
+                                    <p class="text-primary text-center">Your Say...</p>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                         <input type="checkbox" name="Service" value="yes">
+                            Great Service
+                        </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                        <input type="checkbox" name="Food" value="yes">
+                            Great Food
+                        </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                        <input type="checkbox" name="Food" value="yes">
+                            Great Ambience
+                        </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                        <input type="checkbox" name="Addfren" value="yes">
+                            Recommend a Friend
+                        </label>
+                                </div>
+                                <button type="submit" class="btn btn-xs btn-primary">That's Final</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="Jumbotron">
+                <div class="col-sx-12 text-center">
+                    <div id="locate"></div>
+                    <h4>Locate Us</h4>
+                </div>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-sx-12 col-sm-12 col-md-12 col-lg-4">
+                    <div class="thumbnail misceffect">
+                        <div class="panel-body">
+                            <h2 class="text-default text-center">Opening Hours</h2>
+                            <div class="table-responsive">
+                                <table class="table table-condensed">
+                                    <tr>
+                                        <th>Days</th>
+                                        <th>Hours</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Monday - Thursday</td>
+                                        <td>11am - 9pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Friday - Saturday</td>
+                                        <td>11am - 2am</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sunday/Public Holidays</td>
+                                        <td>10am - 10pm</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sx-12 col-sm-12 col-md-12 col-lg-4">
+                    <div class="thumbnail misceffect">
+                        <div class="panel-body">
+                            <div class="embed-responsive embed-responsive-4by3">
+                                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.253461236656!2d103.8499674!3d1.2860075!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x134774857c81a02c!2sHarry&#39;s!5e0!3m2!1sen!2ssg!4v1500106227994">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sx-12 col-sm-12 col-md-12 col-lg-4">
+                    <div class="thumbnail misceffect">
+                        <div class="panel-body">
+                            <h2 class="text-default text-center">Stay in touch!</h2>
+                            <hr>
+                            <div class="list-group">
+                                <a href="tel:+80092323232" class="list-group-item"><i class="fa-li fa fa-phone fa-fw" aria-hidden="true"></i>&nbsp; +800 92323232</a>
+                                <a href="mailto:sunrasin@gmail.com?subject=AdoptCat&body=I am interested." class="list-group-item"><i class="fa-li fa fa-envelope fa-fw" aria-hidden="true" ></i> &nbsp; sunrasin@gmail.com</a>
+                                <a href="https://web.telegram.org/#/login" class="list-group-item"><i class="fa-li fa fa-slack fa-fw" aria-hidden="true"></i>&nbsp; @HerbyRoast</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sx-12">
+                    <ul class="list-inline text-center">
+                        <li><a href="fb.com"><i class="fa fa-facebook fa-1x" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram fa-1x" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-snapchat-ghost fa-1x" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus fa-1x" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
